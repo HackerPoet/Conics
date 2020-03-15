@@ -1,9 +1,7 @@
 # Conics
 An interactive conic visualization app used to record [**This Video**](https://youtu.be/X83vac2uTUs).
 
-**Download**
-[**(Windows 64bit)**](https://github.com/HackerPoet/Conics/raw/master/Conics.zip)
-[**(Windows 32bit)**](https://github.com/HackerPoet/Conics/raw/master/ConicsWin32.zip)
+[**Download (Windows 64bit)**](https://github.com/HackerPoet/Conics/raw/master/Conics.zip)
 
 ## Key Bindings
 * Space Bar - Advance to the next animation

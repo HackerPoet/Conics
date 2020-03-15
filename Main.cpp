@@ -56,7 +56,11 @@ static void ActivatePoint(const sf::RenderTarget& window) {
   mouse_select = -1;
 }
 
+#if 0
 int main(int argc, char *argv[]) {
+#else
+INT WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PSTR lpCmdLine, INT nCmdShow) {
+#endif
   //Get the screen size
   sf::VideoMode screenSize = sf::VideoMode::getDesktopMode();
   screenSize = sf::VideoMode(start_w, start_h, screenSize.bitsPerPixel);
@@ -73,7 +77,7 @@ int main(int argc, char *argv[]) {
   //Create the window
   sf::RenderWindow window;
   sf::Uint32 window_style = (start_fullscreen ? sf::Style::Fullscreen : sf::Style::Resize | sf::Style::Close);
-  window.create(screenSize, "Conics", window_style, settings);
+  window.create(screenSize, "Extraordinary Conics - By CodeParade", window_style, settings);
   window.setFramerateLimit(60);
   window.requestFocus();
   sf::View view = window.getDefaultView();
