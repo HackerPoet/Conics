@@ -8,3 +8,14 @@ An interactive conic visualization app used to record [**This Video**](https://y
 * Mouse - Click and drag on points to interact (not all points are movable)
 * C - Capture a screenshot and save it to the local directory.
 * Escape - Exit the app.
+
+## Building
+
+Dependencies: `SFML 2`, `Eigen 3`.
+
+Building with CMake:
+
+* `mkdir build`
+* `cd build`
+* `cmake ..`
+* `make`

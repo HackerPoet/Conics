@@ -31,7 +31,7 @@ static bool UpdateTMode(double& t, T& mode, double t_in, double t_out) {
     t = std::max(t - t_out, 0.0);
     if (t <= 0.0) {
       mode = T(mode + 1);
-      if (mode == typename T::MODE_END) {
+      if (mode == T::MODE_END) {
         return true;
       } else {
         Animations::animate_out = false;

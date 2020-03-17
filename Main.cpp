@@ -56,10 +56,11 @@ static void ActivatePoint(const sf::RenderTarget& window) {
   mouse_select = -1;
 }
 
-#if 0
-int main(int argc, char *argv[]) {
-#else
+#if defined(WIN32) || defined(_WIN32) || defined(__WIN32)
+// windows main
 INT WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PSTR lpCmdLine, INT nCmdShow) {
+#else
+int main(int argc, char *argv[]) {
 #endif
   //Get the screen size
   sf::VideoMode screenSize = sf::VideoMode::getDesktopMode();
